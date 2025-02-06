@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <%- include('../fragments/head.ejs') %>
+    <link rel="stylesheet" href="/css/error.css">
+</head>
+
+<body>
+    <%- include('../fragments/header.ejs') %>
+
+    <main>
+        <div id="error">
+            <img id="error-img" src="<%= error_image %>" alt="error"/>
+            <section id="error-message">
+                <h2><%= error_title %></h2>
+                <p><%= error_text %></p>
+            </section>
+        </div>
+    </main>
+
+    <%- include('../fragments/footer.ejs') %>
+</body>
+
+</html>

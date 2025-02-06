@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <%- include('../fragments/head.ejs') %>
+    <link rel="stylesheet" href="/css/faq.css">
+</head>
+
+<body>
+    <%- include('../fragments/header.ejs') %>
+
+    <main>
+        <video controls poster="videos/different_hardwoods/different_hardwoods.jpg" preload="none">
+            <!-- Multiple video sources -->
+            <source src="videos/different_hardwoods/different_hardwoods.mp4" type="video/mp4" default>
+            <source src="videos/different_hardwoods/different_hardwoods.webm" type="video/webm">
+            
+            <!-- Subtitles -->
+            <track src="videos/different_hardwoods/subtitles/subtitles-ro.vtt" kind="subtitles" srclang="ro" label="Română" default>
+            <track src="videos/different_hardwoods/subtitles/subtitles-en.vtt" kind="subtitles" srclang="en" label="English">
+        </video>
+    </main>
+
+    <%- include('../fragments/footer.ejs') %>
+</body>
+
+</html>

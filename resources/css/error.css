@@ -1,0 +1,28 @@
+footer {
+    position: absolute;
+    bottom: 0;
+}
+
+#error {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "zona1 zona2";
+    padding-top: 200px;
+    width: 100vw;
+}
+
+#error-img {
+    grid-area: zona1;
+    margin-left: auto;
+    margin-right: 1vw;
+    width: 7vw;
+}
+
+#error-message {
+    grid-area: zona2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}

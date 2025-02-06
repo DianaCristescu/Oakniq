@@ -1,0 +1,116 @@
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+#navbar * {
+  text-decoration: none;
+}
+
+.dropdown {
+  display: flex;
+  flex-direction: column;
+  max-height: 0;
+  transform: scaleY(0);
+  transition: max-height 1s ease, transform 0.6s ease;
+  width: 100%;
+  background: white;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border-radius: 0px 0px 10px 10px;
+  overflow: hidden;
+}
+.dropdown > li {
+  width: 100%;
+  display: block;
+  padding: 10px 10px 5px 0px;
+  text-align: center;
+}
+.dropdown > li a {
+  color: transparent;
+}
+
+.navbar-option, #title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.navbar-option {
+  padding-top: 10px;
+  transition: all 2s linear;
+}
+.navbar-option .navbar-option-hover-bar {
+  margin-top: auto;
+  bottom: 0;
+  height: 5px;
+  width: 100%;
+  background: linear-gradient(to right, var(--green), white, white, white, white);
+  background-size: 400% 100%;
+  background-position: right;
+  transition: background-position 0.5s ease-in-out;
+}
+
+.navbar-option:hover .navbar-option-hover-bar {
+  background-position: left;
+}
+.navbar-option:hover > .dropdown {
+  height: auto;
+  max-height: 200px;
+  transform: scaleY(1);
+}
+.navbar-option:hover > .dropdown > li {
+  transition: background-color 0.5s linear;
+}
+.navbar-option:hover > .dropdown > li a {
+  transition: color 0.5s ease-in;
+  color: var(--almost-black);
+}
+.navbar-option:hover > .dropdown > li:hover {
+  background: var(--green);
+}
+.navbar-option:hover > .dropdown > li:hover a {
+  color: white;
+}
+
+#navbar-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 11fr 1fr 1fr 1.4fr;
+  grid-template-rows: 50px;
+  grid-template-areas: "zona2 zona3 zona1 zona4 zona5 zona6";
+}
+#navbar-grid > li:nth-child(1) {
+  background: var(--white);
+  grid-area: zona1;
+}
+#navbar-grid > li:nth-child(2) {
+  background: var(--white);
+  grid-area: zona2;
+}
+#navbar-grid > li:nth-child(3) {
+  background: var(--white);
+  grid-area: zona3;
+}
+#navbar-grid > li:nth-child(4) {
+  background: var(--white);
+  grid-area: zona4;
+}
+#navbar-grid > li:nth-child(5) {
+  background: var(--white);
+  grid-area: zona5;
+}
+#navbar-grid > li:nth-child(6) {
+  background: var(--white);
+  grid-area: zona6;
+}
+
+#title a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=navbar.css.map */

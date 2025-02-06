@@ -1,0 +1,67 @@
+{
+    "base_path": "/images/errors/",
+    "default_error": {
+        "title": "Error",
+        "text": "An unexpected error has occurred.",
+        "image": "error.png"
+    },
+    "info_errors": [
+        {
+        "identifier": 301,
+        "status": true,
+        "title": "301 Moved Permanently",
+        "text": "The requested page has been permanently moved to a new location.",
+        "image": "error.png"
+        },
+        {
+        "identifier": 400,
+        "status": true,
+        "title": "400 Bad Request",
+        "text": "The server cannot or will not process the request due to an apparent client error.",
+        "image": "error.png"
+        },
+        {
+        "identifier": 403,
+        "status": true,
+        "title": "403 Forbidden",
+        "text": "The request is valid, but the server refuses to authorize it.",
+        "image": "error.png"
+        },
+        {
+        "identifier": 404,
+        "status": true,
+        "title": "404 Not Found",
+        "text": "The requested resource could not be found.",
+        "image": "error.png"
+        },
+        {
+        "identifier": 405,
+        "status": true,
+        "title": "405 Method Not Allowed",
+        "text": "The requested method is not allowed for the specified resource.",
+        "image": "error.png"
+        },
+        {
+        "identifier": 408,
+        "status": true,
+        "title": "408 Request Timeout",
+        "text": "The server timed out waiting for the request.",
+        "image": "error.png"
+        },
+        {
+        "identifier": 500,
+        "status": true,
+        "title": "500 Internal Server Error",
+        "text": "An unexpected condition was encountered on the server.",
+        "image": "error.png"
+        },
+        {
+        "identifier": 503,
+        "status": true,
+        "title": "503 Service Unavailable",
+        "text": "The server is temporarily unavailable due to maintenance or overload.",
+        "image": "error.png"
+        }
+    ]
+  }
+  
